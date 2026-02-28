@@ -37,8 +37,7 @@ setVotes({
 }
 
   return(
-    <>
- <div className={css.app}></div>
+ <div className={css.app}>
  <CafeInfo />
  <VoteOptions onVote = {handleVote}
 onReset = {resetVotes}
@@ -50,7 +49,7 @@ canReset={totalVotes > 0}
 totalVotes={totalVotes}
 positiveRate={positiveRate}
 /> : <Notification />}
-    </>
+    </div>
 );
 
 }
